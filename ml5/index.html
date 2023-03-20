@@ -5,25 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 🚀</title>
+    <link rel="stylesheet" href="index.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
     <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
   </head>
   <body>
-    <h1>Let's have fun</h1>
+    <h1>🎉Let's play a game 🎲</h1>
+    <h2>Inazuma</h2>
+    <p>The rules are simple:</p>
     <ul>
-      <li>just dance (poseNet, Object detector)</li>
-      <li>5 differences (face api, DCGAN)</li>
-      <li>indice de similarité (face mesh)</li>
-      <li>Pictionnary(SketchRNN)</li>
-      <li>Babbel (PitchDetection)</li>
-      <li>inazuma (Handpose, PitchDetection)</li>
+      <li>the computer will give you an instance</li>
+      <li>you have to replicate the same one with your hand</li>
+      <li>if you make the right one, you win</li>
+      <li>if you make the wrong one, you lose</li>
+      <li class="ps">the move detection can take some time, please be patient with it</li>
     </ul>
 
-    <h2>Inazuma</h2>
-    <div id="computer"></div>
-    <div id="result"></div>
-   
+    
+    <button onclick="play()">Get a move</button>
+    <p>The computer's choice is:</p>
+    <p id="computer"></p>
+
     <script src="sketch.js"></script>
+    <p>The result is:</p>
+    <p id="result"></p>
   </body>
 </html>
